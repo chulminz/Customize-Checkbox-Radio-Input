@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>Customize Checkbox & Radio Input</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write(unescape('%3Cscript src="http://jquery.com/jquery-wp-content/themes/jquery/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input[type=checkbox], input[type=radio]").customizeCRInput();
+		});
+	</script>
+</head>
+<body>
+<header><h1>Customize Checkbox & Radio Input</h1></header>
+<article>
+
+	<h2>Input - checkbox</h2>
+	<ul>
+		<li><input id="chk_1" type="checkbox" name="chk" value="1"><label for="chk_1" class="type-checkbox">Apple1</label></li>
+		<li><input id="chk_2" type="checkbox" name="chk" value="2"><label for="chk_2" class="type-checkbox">Apple2</label></li>
+		<li><input id="chk_3" type="checkbox" name="chk" value="3"><label for="chk_3" class="type-checkbox">Apple3</label></li>
+		<li><input id="chk_4" type="checkbox" name="chk" value="4"><label for="chk_4" class="type-checkbox">Apple4</label></li>
+	</ul>
+
+	<h2>Input - radio</h2>
+	<ul>
+		<li><input id="rdo_1" type="radio" name="rdo" value="1"><label for="rdo_1" class="type-radio">Banana1</label></li>
+		<li><input id="rdo_2" type="radio" name="rdo" value="2"><label for="rdo_2" class="type-radio">Banana2</label></li>
+		<li><input id="rdo_3" type="radio" name="rdo" value="3"><label for="rdo_3" class="type-radio">Banana3</label></li>
+		<li><input id="rdo_4" type="radio" name="rdo" value="4"><label for="rdo_4" class="type-radio">Banana4</label></li>
+	</ul>
+
+</article>
+
+</body>
+</html>
