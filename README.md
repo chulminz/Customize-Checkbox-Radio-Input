@@ -1,6 +1,15 @@
-# Customize Checkbox Radio Input
+체크박스, 라디오 Input 요소 UI 디자인 변경
+=====
 
-## HTML
+폼 요소 중 체크박스와 라디오 버튼의 UI 디자인 변경을 위한 플러그인 입니다. 기본 input 요소는 숨기고 input과 연결된 label 에 배경 이미지로 체크박스와 라디오 버튼을 표현합니다.
+
+HTML
+-----
+각 input 요소에 label 을 연결합니다.
+- checkbox 에 연결된 label은 `class="type-checkbox"`
+- radio 에 연결된 label은 `class="type-radio"`
+
+
 ```html
 	<ul>
 		<li><input id="chk_1" type="checkbox" name="chk" value="1"><label for="chk_1" class="type-checkbox">Apple1</label></li>
@@ -16,8 +25,9 @@
 		<li><input id="rdo_4" type="radio" name="rdo" value="4"><label for="rdo_4" class="type-radio">Banana4</label></li>
 	</ul>
 ```
-## CSS
-
+CSS
+-----
+`label.type-checkbox`, `label.type-radio` 에 스타일 선언하며, input 요소가 checked 되었을 때 보여질 스타일은 `label.type-checkbox.checked`, `label.type-radio.checked`에 선언합니다.
 ```css
 input[type=radio],
 input[type=checkbox] {
@@ -53,7 +63,8 @@ label.type-radio.checked {
 }
 ```
 
-## Javascript
+Javascript
+-----
 
 ```javascript
 $("input[type=checkbox], input[type=radio]").customizeCRInput();
