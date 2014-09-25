@@ -24,7 +24,7 @@ input[type=checkbox] {
 	left:0; top:0;
 	width:1px; height:1px;
 	overflow:hidden;
-	visibility:hidden;
+	/* visibility:hidden; */
 }
 
 label.type-checkbox {
